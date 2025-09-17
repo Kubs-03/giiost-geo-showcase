@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronDown, Menu, X, Mail, Users, Facebook, Instagram, Linkedin } from 'lucide-react';
-import logo from '/logo.png';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -57,7 +56,7 @@ const Header = () => {
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
             <div className="flex items-center space-x-2">
-              <img src={logo} alt="GIIOST Logo" className="h-8 w-auto" />
+              <img src="/logo.PNG" alt="GIIOST Logo" className="h-8 w-auto" />
               <div className="text-3xl font-bold text-black">
                 GIIOST
               </div>
