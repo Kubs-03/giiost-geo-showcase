@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Plane, Radar, MapPin, Search, Satellite, Database } from 'lucide-react';
 
 const services = [
@@ -35,6 +35,18 @@ const services = [
 ];
 
 const ServicesShowcase = () => {
+  const [activeIcons, setActiveIcons] = useState<Set<number>>(new Set());
+
+  const toggleIconActive = (index: number) => {
+    const newActiveIcons = new Set(activeIcons);
+    if (newActiveIcons.has(index)) {
+      newActiveIcons.delete(index);
+    } else {
+      newActiveIcons.add(index);
+    }
+    setActiveIcons(newActiveIcons);
+  };
+
   return (
     <section className="section-padding bg-grey-50">
       <div className="container-custom">
@@ -54,8 +66,11 @@ const ServicesShowcase = () => {
               className="bg-white rounded-lg p-8 shadow-card hover-lift group cursor-pointer"
             >
               <div className="mb-6">
-                <div className="w-16 h-16 bg-gradient-primary rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <service.icon className="h-8 w-8 text-white" />
+                <div 
+                  className={`w-16 h-16 bg-gradient-primary rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 group-hover:animate-rotate-horizontal transition-all duration-300 icon-gradient-hover cursor-pointer ${activeIcons.has(index) ? 'icon-gradient-active animate-rotate-horizontal' : ''}`}
+                  onClick={() => toggleIconActive(index)}
+                >
+                  <service.icon className="h-8 w-8 text-white transition-all duration-300" />
                 </div>
                 <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
                   {service.title}

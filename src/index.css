@@ -178,4 +178,21 @@
   .hero-overlay {
     background: var(--gradient-overlay);
   }
+  
+  /* Icon gradient effects */
+  .icon-gradient-hover:hover svg {
+    background: var(--gradient-hero);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 8px hsl(var(--primary) / 0.3));
+  }
+
+  .icon-gradient-active svg {
+    background: var(--gradient-hero);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 8px hsl(var(--primary) / 0.3));
+  }
 }
