@@ -55,8 +55,9 @@ const Header = () => {
         <div className="container-custom">
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
-            <div className="flex items-center">
-              <div className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+            <div className="flex items-center space-x-2">
+              <img src="/logo.png" alt="GIIOST Logo" className="h-8 w-auto" />
+              <div className="text-3xl font-bold text-black">
                 GIIOST
               </div>
             </div>
