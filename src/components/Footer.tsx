@@ -74,8 +74,8 @@ const Footer = () => {
                 <MapPin className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-grey-300">
-                    123 Geospatial Park, Tech District<br />
-                    Bangalore, Karnataka 560001<br />
+                    123 Geospatial Park <br />
+                    Visakhapatnam, Andhra Pradesh 530001<br />
                     India
                   </p>
                 </div>
@@ -83,7 +83,7 @@ const Footer = () => {
               
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-primary flex-shrink-0" />
-                <span className="text-grey-300">+91 80 1234 5678</span>
+                <span className="text-grey-300">+91 97009****</span>
               </div>
               
               <div className="flex items-center space-x-3">
