@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header className="flex justify-between items-center p-4 bg-gray-800 text-white">
       <div className="flex items-center">
-        <img src="logo.PNG" alt="Logo" className="h-8 w-8 mr-2" />
+        <img src="/giiost-geo-showcase/logo.PNG" alt="Logo" className="h-8 w-8 mr-2" />
         <h1 className="text-xl font-bold">GIIOST</h1>
       </div>
       <nav>
