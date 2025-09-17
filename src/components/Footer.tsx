@@ -74,8 +74,8 @@ const Footer = () => {
                 <MapPin className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-grey-300">
-                    123 Geospatial Park <br />
-                    Visakhapatnam, Andhra Pradesh 530001<br />
+                   123 Geospatial Park, Tech District<br />
+                   Bangalore, Karnataka 560001<br />
                     India
                   </p>
                 </div>
@@ -83,7 +83,7 @@ const Footer = () => {
               
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-primary flex-shrink-0" />
-                <span className="text-grey-300">+91 97009****</span>
+                <span className="text-grey-300">+91 80 1234 5678</span>
               </div>
               
               <div className="flex items-center space-x-3">
@@ -98,7 +98,7 @@ const Footer = () => {
         <div className="border-t border-grey-800 pt-8 mt-12">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-grey-400 text-sm mb-4 md:mb-0">
-              © 2025 GIIOST. All rights reserved.
+              © 2024 GIIOST. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <a href="#terms" className="text-grey-400 hover:text-primary transition-colors">Terms of Service</a>
